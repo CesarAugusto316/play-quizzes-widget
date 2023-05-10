@@ -1,0 +1,15 @@
+{
+  "name": "play-quizzes-widget",
+  "private": true,
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "git@gitlab.com:quizify/play-quizzes-widget.git",
+  "author": "Quizify SpA",
+  "license": "MIT",
+  "workspaces": {
+    "packages": [
+      "widgets/*",
+      "demosites/*"
+    ]
+  }
+}
