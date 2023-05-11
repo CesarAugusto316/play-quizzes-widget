@@ -1,5 +1,5 @@
 import ReactDOM from 'react-dom/client';
-import { PlayQuizzes } from '@quizify/quiz-library';
+import { PlayQuiz } from '@quizify/quiz-library';
 
 
 
@@ -7,9 +7,8 @@ import { PlayQuizzes } from '@quizify/quiz-library';
 type NodeElDataAttributes = {
   examid: string,
   ongoback: string,
-  theme: string,
+  darkmode: string,
   lang: string,
-  quizgpt: string,
   params: string,
   enablesound: string
 }
@@ -28,20 +27,19 @@ try {
       }), {}) as NodeElDataAttributes
   );
 
-  const { enablesound, examid, lang, ongoback, params, quizgpt, theme } = dataAttributes;
+  const { enablesound, examid, lang, ongoback, params, darkmode } = dataAttributes;
   const queryParams = new URLSearchParams(params);
 
   ReactDOM
     .createRoot(widget)
     .render(
-      <PlayQuizzes
+      <PlayQuiz
         examnId={Number(examid)}
-        enableSound={JSON.parse(enablesound)}
+        onGoBack={() => window.location.href = ongoback}
         lang={lang}
-        onGoHome={() => console.log(ongoback)}
-        quizGpt={quizgpt}
-        theme={JSON.parse(theme)}
-        params={{ email: queryParams.get('email'), identifier: queryParams.get('identifier') }}
+        darkMode={JSON.parse(darkmode)}
+        enableSound={JSON.parse(enablesound)}
+        paramsFromHome={{ email: queryParams.get('email'), identifier: queryParams.get('identifier') }}
       />
     );
 }

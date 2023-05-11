@@ -452,10 +452,10 @@
   resolved "https://registry.yarnpkg.com/@popperjs/core/-/core-2.11.7.tgz#ccab5c8f7dc557a52ca3288c10075c9ccd37fff7"
   integrity sha512-Cr4OjIkipTtcXKjAsm8agyleBuDHvxzeBoa1v543lbv1YaIwQjESsVcmjiWiPEbC1FIeHOG/Op9kdCmAmiS3Kw==
 
-"@quizify/quiz-library@^0.2.2":
-  version "0.2.2"
-  resolved "https://gitlab.com/api/v4/projects/43706685/packages/npm/@quizify/quiz-library/-/@quizify/quiz-library-0.2.2.tgz#fbff17f5198a3c863e8cddecc7091724794e3713"
-  integrity sha1-+/8X9RmKPIY+jN3sxwkXJHlONxM=
+"@quizify/quiz-library@^0.2.5":
+  version "0.2.5"
+  resolved "https://gitlab.com/api/v4/projects/43706685/packages/npm/@quizify/quiz-library/-/@quizify/quiz-library-0.2.5.tgz#137f9609d63c21db3aaef4d124cf60ff87e8b09f"
+  integrity sha1-E3+WCdY8Ids6rvTRJM9g/4fosJ8=
   dependencies:
     "@emotion/react" "^11.10.5"
     "@emotion/styled" "^11.10.5"
