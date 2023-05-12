@@ -28,5 +28,5 @@
     "react/react-in-jsx-scope": "off",
     "@typescript-eslint/no-explicit-any": "off"
   },
-  "ignorePatterns": ["**/dist/*.js", "**/*.d.ts", "**/dist/*.cjs"]
+  "ignorePatterns": ["**/dist/**/*.js", "**/*.d.ts", "**/dist/*.cjs"]
 }
